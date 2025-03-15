@@ -46,11 +46,11 @@ def main():
     depth = int(input("Enter the depth of analysis: "))
     
     if choice == "1":
-        start_points = float(input("Enter the number of Pi you own: "))
+        start_points = float(input("Enter the number of Pi you want to sell: "))
         sell_price = float(input("Enter the selling price: "))
         calculate_profit_loss(start_points, sell_price, step, depth)
     elif choice == "2":
-        start_dollars = float(input("Enter the amount in dollars: "))
+        start_dollars = float(input("Enter the amount in dollars you want to buy: "))
         buy_price = float(input("Enter the buying price: "))
         calculate_future_value(start_dollars, buy_price, step, depth)
     else:
