@@ -1,62 +1,69 @@
-# Piculator
-A trading calculator for Pi coin. Enter a selling price to see your earnings, then check how much it would cost to buy back the same amount of Pi coins.
-# Pi Coin Trading Calculator
+# PiCulator - Pi Coin Trading Calculator
 
 ## Description
-This script allows users to calculate potential profit or loss when trading Pi Coin. It provides two main functionalities:
+PiCulator is a simple Python-based trading calculator for Pi Coin. It helps users estimate potential profits and losses when selling or buying Pi Coin at different price points. The tool provides two modes:
 
-1. **Process A**: Calculate profit or loss when selling Pi Coin at a given price and buying back at different prices.
-2. **Process B**: Calculate profit or loss when buying Pi Coin with a certain amount of dollars and selling at different prices.
+1. **Selling Mode**: Calculates potential profits/losses if you sell Pi Coin at a given price and buy it back at different lower/higher prices.
+2. **Buying Mode**: Calculates potential profits/losses if you buy Pi Coin at a given price and later sell it at different higher/lower prices.
 
-Users can customize the step size for price variations and the depth of analysis.
+## Features
+- Allows users to choose between selling and buying calculations.
+- Provides a step-based price variation analysis.
+- Customizable depth of analysis.
+- Input validation to ensure valid numerical values.
 
-## How to Run the Program
+## Requirements
+- Python 3.x
 
-### Requirements
-- Python 3 installed on your system
+## Installation
+Clone the repository and navigate to the project directory:
+```bash
+git clone https://github.com/dimliaro/Piculator.git
+cd Piculator
+```
 
-### Steps to Run
-1. Download the script (`pi_coin_trading.py`).
-2. Open a terminal or command prompt.
-3. Navigate to the directory where the script is located.
-4. Run the script using:
-   ```sh
-   python pi_coin_trading.py
+## Running the Program
+### Method 1: Running as a Python Script
+Execute the script using Python:
+```bash
+python piculator.py
+```
+Follow the on-screen instructions to input values.
+
+### Method 2: Running in Jupyter Notebook
+If you prefer to run it in a Jupyter Notebook:
+1. Install Jupyter Notebook if you haven't already:
+   ```bash
+   pip install notebook
    ```
-5. Follow the on-screen instructions:
-   - Choose **1** for selling Pi Coin (Process A)
-   - Choose **2** for buying Pi Coin (Process B)
-   - Enter the necessary values when prompted, including step size and depth of analysis.
+2. Open Jupyter Notebook:
+   ```bash
+   jupyter notebook
+   ```
+3. Create a new notebook and copy-paste the code into a cell.
+4. Run the cell and follow the prompts.
 
 ## Example Usage
-### Example 1: Selling Pi Coin
+### Selling Mode Example:
 ```
-Select an option:
-1: Calculate profit/loss from selling (Process A)
-2: Calculate profit/loss from buying (Process B)
 Enter choice (1/2): 1
-Enter the step size for price variation: 0.01
-Enter the depth of analysis: 10
 Enter the number of Pi you own: 1000
 Enter the selling price: 1.50
-```
-This will show potential profit or loss depending on different buy-back prices.
-
-### Example 2: Buying Pi Coin
-```
-Select an option:
-1: Calculate profit/loss from selling (Process A)
-2: Calculate profit/loss from buying (Process B)
-Enter choice (1/2): 2
 Enter the step size for price variation: 0.01
 Enter the depth of analysis: 10
-Enter the amount in dollars: 1500
-Enter the buying price: 1.50
 ```
-This will show potential profit or loss depending on different selling prices.
 
-## Notes
-- The script assumes no transaction fees or market fluctuations beyond the given steps.
-- The analysis depth and step size can be adjusted as needed.
+### Buying Mode Example:
+```
+Enter choice (1/2): 2
+Enter the amount in dollars: 500
+Enter the buying price: 1.20
+Enter the step size for price variation: 0.01
+Enter the depth of analysis: 10
+```
 
-Enjoy your trading calculations!
+## Contributing
+Feel free to submit issues or pull requests for improvements.
+## License
+This project is the exclusive property of dimliaro. You may use, modify, and distribute this software only with explicit written permission.
+
