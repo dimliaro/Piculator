@@ -47,7 +47,7 @@ If you prefer to run it in a Jupyter Notebook:
 ### Selling Mode Example:
 ```
 Enter choice (1/2): 1
-Enter the number of Pi you own: 1000
+Enter the number of Pi you want to sell: 1000
 Enter the selling price: 1.50
 Enter the step size for price variation: 0.01
 Enter the depth of analysis: 10
@@ -56,7 +56,7 @@ Enter the depth of analysis: 10
 ### Buying Mode Example:
 ```
 Enter choice (1/2): 2
-Enter the amount in dollars: 500
+Enter the amount in dollars you want to invest: 500
 Enter the buying price: 1.20
 Enter the step size for price variation: 0.01
 Enter the depth of analysis: 10
